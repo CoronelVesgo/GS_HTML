@@ -1,0 +1,10 @@
+header{
+    width: 100%;
+    background-color:whitesmoke;
+}
+
+body{
+    height: 100vh;
+    width: 100vh;
+    background-color:lightgray;
+}
