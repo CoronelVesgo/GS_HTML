@@ -1,10 +1,171 @@
-header{
-    width: 100%;
-    background-color:whitesmoke;
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family:'Inter',sans-serif ;
+
 }
 
+header{ 
+    font-size: 15px;
+    background-color:#5885AF;
+    width: 100%; 
+    text-align: center;
+    padding: 15px;
+}
+/*Retira os pontos da lista, determina a cor da navbar, centraliza o texto.*/
+.navbar ul{
+    list-style-type:none;
+    background-color:#274472;
+    width: 100vw;
+    overflow: hidden;
+    text-align: center;
+    
+}
+/*Formata o texto da navbar (cor, fonte etc.).*/
+.navbar a {
+color: #C3E0E5;
+text-decoration: none;
+padding: 10px;
+margin-left: 10px;
+display: inline-block;
+text-align: center;
+
+}
+/*Para quando o mouse passar por cima*/
+.navbar a:hover{
+    background-color:#30528a;
+    transition: 0.2s;
+}
+.navbar li{
+    float: left;
+}
 body{
     height: 100vh;
-    width: 100vh;
-    background-color:lightgray;
+    width: 100%;  
+    background-color:rgb(226, 221, 221);
+
 }
+
+/*Elementos da página Cadastro*/
+.cad_main{   
+    margin-left: 35%;
+    width: 35%;
+    height: 80vh;
+    display: flex;
+    align-items:center ;
+    justify-content: center;
+    background-color: #7bbdfa;
+    box-shadow: 1px 1px 10px black;
+
+}
+.cad_main p{
+    font-family:'Inter';
+    font-size: 25px;
+    margin-bottom: 5px;
+    display: flex;
+    justify-content: center;
+}
+/*Formatação do form*/
+.cad_main{
+    width: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.cad_main label{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 18px;
+    color: black;
+
+
+}
+
+.cad_main button{
+    border: none;
+    background-color:#c8edf3;
+    font-size: medium;
+    color: rgb(0, 0, 0);
+    padding: 0.4rem 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.cad_main button:hover{
+    background-color:#a5c2c7;
+    transition: 0.2s;
+}
+
+.form{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    flex-direction: column;
+    padding: 1rem 0;
+}
+.input-box{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1.1rem;
+
+}
+.input-box input{
+    margin: 0.6rem 0;
+    padding: 0.8rem 1.2rem;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 1px 1px 6px #0000001c;
+}
+.input-box input:hover{
+    background-color: #eeeeee75;
+    transition: 0.2s;
+}
+.input-box input:focus-visible{
+    outline: 1px solid #a5c2c7;
+}
+
+
+.registro-main{
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+.srchBar input{
+    margin: 0.6rem 0;
+    padding: 0.8rem 5rem;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 1px 1px 6px #0000001c;
+    text-align: left;
+}
+.srchBar input:hover{
+    background-color: hsla(0, 100%, 99%, 0.849);
+    transition: 0.2s;
+}
+
+.registro-main button{
+    border: none;
+    background-color:#af0202;
+    font-size: medium;
+    color: rgb(0, 0, 0);
+    padding: 0.2rem 0.4rem;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+.registro-main button:hover{
+    background-color:#7c0b0b;
+    transition: 0.2s;
+}
+
+.resumo-main{
+    margin-left:20px;
+    margin-right:20px;
+}    
