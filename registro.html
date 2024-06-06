@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html Lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewpoint" content="width=device-width, inital-scale=1.0">
+    <title>Registro-Dodô transportadoras.</title>
+    <link rel="stylesheet" href="./assets/Css/Style.css">
+</head>
+<body>
+    <header>
+        <h1>Registro de Viagens</h1>
+        <nav class="navbar">
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="cadastro.html">Cadastrar</a></li>
+                <li><a href="resumo.html">Resumo das viagens</a></li>
+            </ul>
+        </nav>
+    </header>
+<!-- Barra de pesquisa/verificação de viagens -->   
+    <main class="registro-main">
+        <div class="srchBar">
+            <input type="text" id="search" placeholder="Pesquisar viagens...">
+        </div>
+<!-- Função de excluir a(s) viagem selecionada -->       
+        <ul id="listaViagens"></ul>
+        <button id="deleteSelected" class="button" disabled>Excluir</button>
+    </main>
+    <script src="./assets/JS/Registro.js"></script>
+</body>
+</html>

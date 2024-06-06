@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html Lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewpoint" content="width=device-width, inital-scale=1.0">
+    <title>Resumo-Dodô transportadoras.</title>
+    <link rel="stylesheet" href="./assets/Css/Style.css">
+</head>
+<body>
+    <header>
+        <h1>Resumo das viagens</h1>
+        <nav class="navbar">
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="cadastro.html">Cadastrar</a></li>
+                <li><a href="registro.html">Registro</a></li>
+            </ul>
+        </nav>
+    </header>
+ <!--Tabela do resumo-->   
+    <main class="resumo-main">
+        <table id="resumoTable">
+            <thead>
+                <tr>
+                    <th>Nome da embarcação</th>
+                    <th>Tipo da Embarcação</th>
+                    <th>Data de embarque</th>
+                    <th>Data de Retorno</th>
+                    <th>Local</th>
+                    <th>Peso (kg)</th>
+                </tr>
+            </thead>
+            <tbody id="resumoBody"></tbody>
+        </table>
+        <div id="totalViagens" class="total-viagens"></div>
+        <div id="mediaPeso" class="media-peso"></div>
+    </main>
+    <script src="./assets/JS/resumo.js"></script>
+</body>    
+</html>
